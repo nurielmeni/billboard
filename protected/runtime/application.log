@@ -1,0 +1,975 @@
+2012/12/03 13:18:08 [error] [php] date() [<a href='function.date'>function.date</a>]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'Asia/Jerusalem' for 'IST/2.0/no DST' instead (/Users/meninuriel/Sites/billboard/protected/views/layouts/main.php:51)
+Stack trace:
+#0 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#1 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/widgets/CContentDecorator.php(77): SiteController->renderFile()
+#2 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate()
+#3 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput()
+#4 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CBaseController.php(207): CContentDecorator->run()
+#5 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CBaseController.php(301): SiteController->endWidget()
+#6 /Users/meninuriel/Sites/billboard/protected/views/layouts/column1.php(6): SiteController->endContent()
+#7 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CBaseController.php(127): require()
+#8 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#9 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(785): SiteController->renderFile()
+#10 /Users/meninuriel/Sites/billboard/protected/controllers/SiteController.php(32): SiteController->render()
+#11 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#12 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(309): CInlineAction->runWithParams()
+#13 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(287): SiteController->runAction()
+#14 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#15 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CWebApplication.php(283): SiteController->run()
+#16 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#17 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /Users/meninuriel/Sites/billboard/index.php(13): CWebApplication->run()
+REQUEST_URI=/meni/billboard/
+in /Users/meninuriel/Sites/billboard/protected/views/layouts/main.php (51)
+in /Users/meninuriel/Sites/billboard/protected/views/layouts/column1.php (6)
+in /Users/meninuriel/Sites/billboard/protected/controllers/SiteController.php (32)
+2012/12/03 13:23:56 [error] [exception.CException] exception 'CException' with message 'Alias "ext.bootstrap.components.Bootstrap" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php:318
+Stack trace:
+#0 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(198): YiiBase::import('ext.bootstrap.c...', true)
+#1 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CModule.php(387): YiiBase::createComponent(Array)
+#2 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CModule.php(493): CModule->getComponent('bootstrap')
+#3 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CApplication.php(146): CModule->preloadComponents()
+#4 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(127): CApplication->__construct('/Users/meninuri...')
+#5 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(100): YiiBase::createApplication('CWebApplication', '/Users/meninuri...')
+#6 /Users/meninuriel/Sites/billboard/index.php(13): YiiBase::createWebApplication('/Users/meninuri...')
+#7 {main}
+REQUEST_URI=/meni/billboard/index.php?r=site/index
+HTTP_REFERER=http://localhost/meni/billboard/index.php?r=site/page&view=about
+---
+2012/12/03 13:29:32 [error] [exception.CException] exception 'CException' with message 'Alias "ext.bootstrap.components.Bootstrap" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php:318
+Stack trace:
+#0 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(198): YiiBase::import('ext.bootstrap.c...', true)
+#1 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CModule.php(387): YiiBase::createComponent(Array)
+#2 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CModule.php(493): CModule->getComponent('bootstrap')
+#3 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CApplication.php(146): CModule->preloadComponents()
+#4 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(127): CApplication->__construct('/Users/meninuri...')
+#5 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(100): YiiBase::createApplication('CWebApplication', '/Users/meninuri...')
+#6 /Users/meninuriel/Sites/billboard/index.php(13): YiiBase::createWebApplication('/Users/meninuri...')
+#7 {main}
+REQUEST_URI=/meni/billboard/index.php?r=site/index
+HTTP_REFERER=http://localhost/meni/billboard/index.php?r=site/page&view=about
+---
+2012/12/03 13:30:39 [error] [exception.CException] exception 'CException' with message 'Alias "application.extensions.bootstrap.components.Bootstrap" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php:318
+Stack trace:
+#0 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(198): YiiBase::import('application.ext...', true)
+#1 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CModule.php(387): YiiBase::createComponent(Array)
+#2 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CModule.php(493): CModule->getComponent('bootstrap')
+#3 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CApplication.php(146): CModule->preloadComponents()
+#4 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(127): CApplication->__construct('/Users/meninuri...')
+#5 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(100): YiiBase::createApplication('CWebApplication', '/Users/meninuri...')
+#6 /Users/meninuriel/Sites/billboard/index.php(13): YiiBase::createWebApplication('/Users/meninuri...')
+#7 {main}
+REQUEST_URI=/meni/billboard/index.php?r=site/index
+HTTP_REFERER=http://localhost/meni/billboard/index.php?r=site/page&view=about
+---
+2012/12/03 13:31:01 [error] [exception.CException] exception 'CException' with message 'Alias "application.extensions.bootstrap.components.Bootstrap.php" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php:318
+Stack trace:
+#0 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(198): YiiBase::import('application.ext...', true)
+#1 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CModule.php(387): YiiBase::createComponent(Array)
+#2 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CModule.php(493): CModule->getComponent('bootstrap')
+#3 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CApplication.php(146): CModule->preloadComponents()
+#4 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(127): CApplication->__construct('/Users/meninuri...')
+#5 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(100): YiiBase::createApplication('CWebApplication', '/Users/meninuri...')
+#6 /Users/meninuriel/Sites/billboard/index.php(13): YiiBase::createWebApplication('/Users/meninuri...')
+#7 {main}
+REQUEST_URI=/meni/billboard/index.php?r=site/index
+HTTP_REFERER=http://localhost/meni/billboard/index.php?r=site/page&view=about
+---
+2012/12/03 13:31:27 [error] [exception.CException] exception 'CException' with message 'Alias "ext.bootstrap.components.Bootstrap.php" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php:318
+Stack trace:
+#0 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(198): YiiBase::import('ext.bootstrap.c...', true)
+#1 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CModule.php(387): YiiBase::createComponent(Array)
+#2 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CModule.php(493): CModule->getComponent('bootstrap')
+#3 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CApplication.php(146): CModule->preloadComponents()
+#4 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(127): CApplication->__construct('/Users/meninuri...')
+#5 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(100): YiiBase::createApplication('CWebApplication', '/Users/meninuri...')
+#6 /Users/meninuriel/Sites/billboard/index.php(13): YiiBase::createWebApplication('/Users/meninuri...')
+#7 {main}
+REQUEST_URI=/meni/billboard/index.php?r=site/index
+HTTP_REFERER=http://localhost/meni/billboard/index.php?r=site/page&view=about
+---
+2012/12/03 14:06:09 [error] [exception.CException] exception 'CException' with message 'Alias "ext.bootstrap.components.Bootstrap.php" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php:318
+Stack trace:
+#0 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(198): YiiBase::import('ext.bootstrap.c...', true)
+#1 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CModule.php(387): YiiBase::createComponent(Array)
+#2 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CModule.php(493): CModule->getComponent('bootstrap')
+#3 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CApplication.php(146): CModule->preloadComponents()
+#4 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(127): CApplication->__construct('/Users/meninuri...')
+#5 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(100): YiiBase::createApplication('CWebApplication', '/Users/meninuri...')
+#6 /Users/meninuriel/Sites/billboard/index.php(13): YiiBase::createWebApplication('/Users/meninuri...')
+#7 {main}
+REQUEST_URI=/meni/billboard/
+---
+2012/12/03 14:08:11 [error] [exception.CException] exception 'CException' with message 'Alias "ext.bootstrap.components.Bootstrap" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php:318
+Stack trace:
+#0 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(198): YiiBase::import('ext.bootstrap.c...', true)
+#1 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CModule.php(387): YiiBase::createComponent(Array)
+#2 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CModule.php(493): CModule->getComponent('bootstrap')
+#3 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CApplication.php(146): CModule->preloadComponents()
+#4 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(127): CApplication->__construct('/Users/meninuri...')
+#5 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(100): YiiBase::createApplication('CWebApplication', '/Users/meninuri...')
+#6 /Users/meninuriel/Sites/billboard/index.php(13): YiiBase::createWebApplication('/Users/meninuri...')
+#7 {main}
+REQUEST_URI=/meni/billboard/
+---
+2012/12/03 14:09:04 [error] [exception.CException] exception 'CException' with message 'Alias "extensions.bootstrap.components.Bootstrap" is invalid. Make sure it points to an existing directory or file.' in /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php:343
+Stack trace:
+#0 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(198): YiiBase::import('extensions.boot...', true)
+#1 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CModule.php(387): YiiBase::createComponent(Array)
+#2 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CModule.php(493): CModule->getComponent('bootstrap')
+#3 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CApplication.php(146): CModule->preloadComponents()
+#4 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(127): CApplication->__construct('/Users/meninuri...')
+#5 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(100): YiiBase::createApplication('CWebApplication', '/Users/meninuri...')
+#6 /Users/meninuriel/Sites/billboard/index.php(13): YiiBase::createWebApplication('/Users/meninuri...')
+#7 {main}
+REQUEST_URI=/meni/billboard/
+---
+2012/12/03 14:09:34 [error] [exception.CException] exception 'CException' with message 'Alias "application.extensions.bootstrap.components.Bootstrap" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php:318
+Stack trace:
+#0 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(198): YiiBase::import('application.ext...', true)
+#1 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CModule.php(387): YiiBase::createComponent(Array)
+#2 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CModule.php(493): CModule->getComponent('bootstrap')
+#3 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CApplication.php(146): CModule->preloadComponents()
+#4 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(127): CApplication->__construct('/Users/meninuri...')
+#5 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(100): YiiBase::createApplication('CWebApplication', '/Users/meninuri...')
+#6 /Users/meninuriel/Sites/billboard/index.php(13): YiiBase::createWebApplication('/Users/meninuri...')
+#7 {main}
+REQUEST_URI=/meni/billboard/
+---
+2012/12/03 14:12:18 [error] [exception.CException] exception 'CException' with message 'Alias "application.extensions.bootstrap.components.Bootstrap" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php:318
+Stack trace:
+#0 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(198): YiiBase::import('application.ext...', true)
+#1 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CModule.php(387): YiiBase::createComponent(Array)
+#2 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CModule.php(493): CModule->getComponent('bootstrap')
+#3 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CApplication.php(146): CModule->preloadComponents()
+#4 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(127): CApplication->__construct('/Users/meninuri...')
+#5 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(100): YiiBase::createApplication('CWebApplication', '/Users/meninuri...')
+#6 /Users/meninuriel/Sites/billboard/index.php(13): YiiBase::createWebApplication('/Users/meninuri...')
+#7 {main}
+REQUEST_URI=/meni/billboard/
+---
+2012/12/03 14:17:21 [error] [php] include(protected/extensions/bootstrap/components/Bootstrap.php) [<a href='function.include'>function.include</a>]: failed to open stream: Permission denied (/Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php:423)
+Stack trace:
+#0 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(198): import()
+#1 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CModule.php(387): createComponent()
+#2 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CModule.php(493): CWebApplication->getComponent()
+#3 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CApplication.php(146): CWebApplication->preloadComponents()
+#4 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(127): CWebApplication->__construct()
+#5 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(100): createApplication()
+#6 /Users/meninuriel/Sites/billboard/index.php(13): createWebApplication()
+REQUEST_URI=/meni/billboard/
+in /Users/meninuriel/Sites/billboard/index.php (13)
+2012/12/03 14:18:45 [error] [php] include(/Users/meninuriel/Sites/billboard/protected/configprotected/extensions/bootstrap/components/Bootstrap.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php:423)
+Stack trace:
+#0 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(198): import()
+#1 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CModule.php(387): createComponent()
+#2 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CModule.php(493): CWebApplication->getComponent()
+#3 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CApplication.php(146): CWebApplication->preloadComponents()
+#4 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(127): CWebApplication->__construct()
+#5 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(100): createApplication()
+#6 /Users/meninuriel/Sites/billboard/index.php(13): createWebApplication()
+REQUEST_URI=/meni/billboard/
+in /Users/meninuriel/Sites/billboard/index.php (13)
+2012/12/03 14:20:17 [error] [exception.CException] exception 'CException' with message 'Alias "/Users/meninuriel/Sites/billboard/protected/config/../extensions/bootstrap/components/Bootstrap" is invalid. Make sure it points to an existing directory or file.' in /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php:343
+Stack trace:
+#0 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(198): YiiBase::import('/Users/meninuri...', true)
+#1 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CModule.php(387): YiiBase::createComponent(Array)
+#2 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CModule.php(493): CModule->getComponent('bootstrap')
+#3 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CApplication.php(146): CModule->preloadComponents()
+#4 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(127): CApplication->__construct('/Users/meninuri...')
+#5 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(100): YiiBase::createApplication('CWebApplication', '/Users/meninuri...')
+#6 /Users/meninuriel/Sites/billboard/index.php(13): YiiBase::createWebApplication('/Users/meninuri...')
+#7 {main}
+REQUEST_URI=/meni/billboard/
+---
+2012/12/03 14:21:27 [error] [exception.CException] exception 'CException' with message 'Alias "/Users/meninuriel/Sites/billboard/protected/config/../extensions/bootstrap/components/Bootstrap.php" is invalid. Make sure it points to an existing directory or file.' in /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php:343
+Stack trace:
+#0 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(198): YiiBase::import('/Users/meninuri...', true)
+#1 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CModule.php(387): YiiBase::createComponent(Array)
+#2 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CModule.php(493): CModule->getComponent('bootstrap')
+#3 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CApplication.php(146): CModule->preloadComponents()
+#4 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(127): CApplication->__construct('/Users/meninuri...')
+#5 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(100): YiiBase::createApplication('CWebApplication', '/Users/meninuri...')
+#6 /Users/meninuriel/Sites/billboard/index.php(13): YiiBase::createWebApplication('/Users/meninuri...')
+#7 {main}
+REQUEST_URI=/meni/billboard/
+---
+2012/12/03 14:23:18 [error] [exception.CException] exception 'CException' with message 'Alias "/Users/meninuriel/Sites/billboard/protected/extensions/bootstrap/components/Bootstrap.php" is invalid. Make sure it points to an existing directory or file.' in /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php:343
+Stack trace:
+#0 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(198): YiiBase::import('/Users/meninuri...', true)
+#1 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CModule.php(387): YiiBase::createComponent(Array)
+#2 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CModule.php(493): CModule->getComponent('bootstrap')
+#3 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CApplication.php(146): CModule->preloadComponents()
+#4 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(127): CApplication->__construct('/Users/meninuri...')
+#5 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(100): YiiBase::createApplication('CWebApplication', '/Users/meninuri...')
+#6 /Users/meninuriel/Sites/billboard/index.php(13): YiiBase::createWebApplication('/Users/meninuri...')
+#7 {main}
+REQUEST_URI=/meni/billboard/
+---
+2012/12/03 14:28:43 [error] [exception.CException] exception 'CException' with message 'Alias "/Users/meninuriel/Sites/billboard/protected/extensions/bootstrap/components/Bootstrap.php" is invalid. Make sure it points to an existing directory or file.' in /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php:343
+Stack trace:
+#0 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(198): YiiBase::import('/Users/meninuri...', true)
+#1 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CModule.php(387): YiiBase::createComponent(Array)
+#2 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CModule.php(493): CModule->getComponent('bootstrap')
+#3 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CApplication.php(146): CModule->preloadComponents()
+#4 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(127): CApplication->__construct('/Users/meninuri...')
+#5 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(100): YiiBase::createApplication('CWebApplication', '/Users/meninuri...')
+#6 /Users/meninuriel/Sites/billboard/index.php(13): YiiBase::createWebApplication('/Users/meninuri...')
+#7 {main}
+REQUEST_URI=/meni/billboard/
+---
+2012/12/03 14:29:12 [error] [exception.CException] exception 'CException' with message 'Alias "/Users/meninuriel/Sites/billboard/protected/extensions/bootstrap/components/Bootstrap.php" is invalid. Make sure it points to an existing directory or file.' in /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php:343
+Stack trace:
+#0 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(198): YiiBase::import('/Users/meninuri...', true)
+#1 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CModule.php(387): YiiBase::createComponent(Array)
+#2 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CModule.php(493): CModule->getComponent('bootstrap')
+#3 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CApplication.php(146): CModule->preloadComponents()
+#4 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(127): CApplication->__construct('/Users/meninuri...')
+#5 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php(100): YiiBase::createApplication('CWebApplication', '/Users/meninuri...')
+#6 /Users/meninuriel/Sites/billboard/index.php(13): YiiBase::createWebApplication('/Users/meninuri...')
+#7 {main}
+REQUEST_URI=/meni/billboard/
+---
+2012/12/05 01:58:36 [error] [php] include(EBootstrap.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php:423)
+Stack trace:
+#0 /Users/meninuriel/Sites/billboard/protected/views/site/pages/about.php(14): spl_autoload_call()
+#1 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CBaseController.php(127): require()
+#2 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#3 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(870): SiteController->renderFile()
+#4 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(783): SiteController->renderPartial()
+#5 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/actions/CViewAction.php(141): SiteController->render()
+#6 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/actions/CAction.php(75): CViewAction->run()
+#7 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(309): CViewAction->runWithParams()
+#8 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(287): SiteController->runAction()
+#9 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#10 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CWebApplication.php(283): SiteController->run()
+#11 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#12 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Users/meninuriel/Sites/billboard/index.php(13): CWebApplication->run()
+REQUEST_URI=/meni/billboard/index.php?r=site/page&view=about
+in /Users/meninuriel/Sites/billboard/protected/views/site/pages/about.php (14)
+in /Users/meninuriel/Sites/billboard/index.php (13)
+2012/12/05 02:01:28 [error] [php] include(EBootstrap.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php:423)
+Stack trace:
+#0 /Users/meninuriel/Sites/billboard/protected/views/site/pages/about.php(14): spl_autoload_call()
+#1 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CBaseController.php(127): require()
+#2 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#3 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(870): SiteController->renderFile()
+#4 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(783): SiteController->renderPartial()
+#5 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/actions/CViewAction.php(141): SiteController->render()
+#6 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/actions/CAction.php(75): CViewAction->run()
+#7 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(309): CViewAction->runWithParams()
+#8 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(287): SiteController->runAction()
+#9 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#10 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CWebApplication.php(283): SiteController->run()
+#11 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#12 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Users/meninuriel/Sites/billboard/index.php(13): CWebApplication->run()
+REQUEST_URI=/meni/billboard/index.php?r=site/page&view=about
+in /Users/meninuriel/Sites/billboard/protected/views/site/pages/about.php (14)
+in /Users/meninuriel/Sites/billboard/index.php (13)
+2012/12/05 02:01:35 [error] [php] include(EBootstrap.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php:423)
+Stack trace:
+#0 /Users/meninuriel/Sites/billboard/protected/views/site/pages/about.php(14): spl_autoload_call()
+#1 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CBaseController.php(127): require()
+#2 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#3 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(870): SiteController->renderFile()
+#4 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(783): SiteController->renderPartial()
+#5 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/actions/CViewAction.php(141): SiteController->render()
+#6 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/actions/CAction.php(75): CViewAction->run()
+#7 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(309): CViewAction->runWithParams()
+#8 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(287): SiteController->runAction()
+#9 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#10 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CWebApplication.php(283): SiteController->run()
+#11 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#12 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Users/meninuriel/Sites/billboard/index.php(13): CWebApplication->run()
+REQUEST_URI=/meni/billboard/index.php?r=site/page&view=about
+in /Users/meninuriel/Sites/billboard/protected/views/site/pages/about.php (14)
+in /Users/meninuriel/Sites/billboard/index.php (13)
+2012/12/05 02:01:53 [error] [php] include(EBootstrap.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php:423)
+Stack trace:
+#0 /Users/meninuriel/Sites/billboard/protected/views/site/pages/about.php(14): spl_autoload_call()
+#1 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CBaseController.php(127): require()
+#2 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#3 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(870): SiteController->renderFile()
+#4 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(783): SiteController->renderPartial()
+#5 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/actions/CViewAction.php(141): SiteController->render()
+#6 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/actions/CAction.php(75): CViewAction->run()
+#7 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(309): CViewAction->runWithParams()
+#8 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(287): SiteController->runAction()
+#9 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#10 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CWebApplication.php(283): SiteController->run()
+#11 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#12 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Users/meninuriel/Sites/billboard/index.php(13): CWebApplication->run()
+REQUEST_URI=/meni/billboard/index.php?r=site/page&view=about
+in /Users/meninuriel/Sites/billboard/protected/views/site/pages/about.php (14)
+in /Users/meninuriel/Sites/billboard/index.php (13)
+2012/12/05 02:02:45 [error] [php] include(EBootstrap.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php:423)
+Stack trace:
+#0 /Users/meninuriel/Sites/billboard/protected/views/site/pages/about.php(14): spl_autoload_call()
+#1 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CBaseController.php(127): require()
+#2 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#3 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(870): SiteController->renderFile()
+#4 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(783): SiteController->renderPartial()
+#5 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/actions/CViewAction.php(141): SiteController->render()
+#6 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/actions/CAction.php(75): CViewAction->run()
+#7 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(309): CViewAction->runWithParams()
+#8 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(287): SiteController->runAction()
+#9 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#10 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CWebApplication.php(283): SiteController->run()
+#11 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#12 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Users/meninuriel/Sites/billboard/index.php(13): CWebApplication->run()
+REQUEST_URI=/meni/billboard/index.php?r=site/page&view=about
+in /Users/meninuriel/Sites/billboard/protected/views/site/pages/about.php (14)
+in /Users/meninuriel/Sites/billboard/index.php (13)
+2012/12/05 02:02:53 [error] [php] include(EBootstrap.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php:423)
+Stack trace:
+#0 /Users/meninuriel/Sites/billboard/protected/views/site/pages/about.php(14): spl_autoload_call()
+#1 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CBaseController.php(127): require()
+#2 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#3 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(870): SiteController->renderFile()
+#4 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(783): SiteController->renderPartial()
+#5 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/actions/CViewAction.php(141): SiteController->render()
+#6 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/actions/CAction.php(75): CViewAction->run()
+#7 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(309): CViewAction->runWithParams()
+#8 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(287): SiteController->runAction()
+#9 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#10 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CWebApplication.php(283): SiteController->run()
+#11 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#12 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Users/meninuriel/Sites/billboard/index.php(13): CWebApplication->run()
+REQUEST_URI=/meni/billboard/index.php?r=site/page&view=about
+in /Users/meninuriel/Sites/billboard/protected/views/site/pages/about.php (14)
+in /Users/meninuriel/Sites/billboard/index.php (13)
+2012/12/05 02:03:39 [error] [php] include(EBootstrap.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php:423)
+Stack trace:
+#0 /Users/meninuriel/Sites/billboard/protected/views/site/pages/about.php(14): spl_autoload_call()
+#1 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CBaseController.php(127): require()
+#2 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#3 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(870): SiteController->renderFile()
+#4 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(783): SiteController->renderPartial()
+#5 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/actions/CViewAction.php(141): SiteController->render()
+#6 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/actions/CAction.php(75): CViewAction->run()
+#7 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(309): CViewAction->runWithParams()
+#8 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(287): SiteController->runAction()
+#9 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#10 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CWebApplication.php(283): SiteController->run()
+#11 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#12 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Users/meninuriel/Sites/billboard/index.php(13): CWebApplication->run()
+REQUEST_URI=/meni/billboard/index.php?r=site/page&view=about
+in /Users/meninuriel/Sites/billboard/protected/views/site/pages/about.php (14)
+in /Users/meninuriel/Sites/billboard/index.php (13)
+2012/12/05 02:05:19 [error] [php] include(TbBootstrap.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/Users/meninuriel/Sites/framework/yii-1.1.12/framework/YiiBase.php:423)
+Stack trace:
+#0 /Users/meninuriel/Sites/billboard/protected/views/site/pages/about.php(14): spl_autoload_call()
+#1 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CBaseController.php(127): require()
+#2 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#3 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(870): SiteController->renderFile()
+#4 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(783): SiteController->renderPartial()
+#5 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/actions/CViewAction.php(141): SiteController->render()
+#6 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/actions/CAction.php(75): CViewAction->run()
+#7 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(309): CViewAction->runWithParams()
+#8 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(287): SiteController->runAction()
+#9 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#10 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CWebApplication.php(283): SiteController->run()
+#11 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#12 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Users/meninuriel/Sites/billboard/index.php(13): CWebApplication->run()
+REQUEST_URI=/meni/billboard/index.php?r=site/page&view=about
+in /Users/meninuriel/Sites/billboard/protected/views/site/pages/about.php (14)
+in /Users/meninuriel/Sites/billboard/index.php (13)
+2012/12/05 02:16:38 [error] [exception.CException] exception 'CException' with message 'Property "TbCarousel.interval" is not defined.' in /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CComponent.php:174
+Stack trace:
+#0 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CWidgetFactory.php(162): CComponent->__set('interval', 6000)
+#1 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'TbCarousel', Array)
+#2 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CBaseController.php(173): CBaseController->createWidget('TbCarousel', Array)
+#3 /Users/meninuriel/Sites/billboard/protected/views/site/pages/about.php(24): CBaseController->widget('TbCarousel', Array)
+#4 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CBaseController.php(127): require('/Users/meninuri...')
+#5 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/meninuri...', NULL, true)
+#6 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(870): CBaseController->renderFile('/Users/meninuri...', NULL, true)
+#7 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(783): CController->renderPartial('pages/about', NULL, true)
+#8 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/actions/CViewAction.php(141): CController->render('pages/about')
+#9 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/actions/CAction.php(75): CViewAction->run()
+#10 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(309): CAction->runWithParams(Array)
+#11 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(287): CController->runAction(Object(CViewAction))
+#12 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#13 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CWebApplication.php(283): CController->run('page')
+#14 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController('site/page')
+#15 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /Users/meninuriel/Sites/billboard/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/meni/billboard/index.php?r=site/page&view=about
+---
+2012/12/05 02:17:08 [error] [exception.CException] exception 'CException' with message 'Property "TbCarousel.infinite" is not defined.' in /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CComponent.php:174
+Stack trace:
+#0 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CWidgetFactory.php(162): CComponent->__set('infinite', false)
+#1 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'TbCarousel', Array)
+#2 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CBaseController.php(173): CBaseController->createWidget('TbCarousel', Array)
+#3 /Users/meninuriel/Sites/billboard/protected/views/site/pages/about.php(24): CBaseController->widget('TbCarousel', Array)
+#4 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CBaseController.php(127): require('/Users/meninuri...')
+#5 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/meninuri...', NULL, true)
+#6 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(870): CBaseController->renderFile('/Users/meninuri...', NULL, true)
+#7 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(783): CController->renderPartial('pages/about', NULL, true)
+#8 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/actions/CViewAction.php(141): CController->render('pages/about')
+#9 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/actions/CAction.php(75): CViewAction->run()
+#10 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(309): CAction->runWithParams(Array)
+#11 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(287): CController->runAction(Object(CViewAction))
+#12 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#13 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CWebApplication.php(283): CController->run('page')
+#14 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController('site/page')
+#15 /Users/meninuriel/Sites/framework/yii-1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /Users/meninuriel/Sites/billboard/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/meni/billboard/index.php?r=site/page&view=about
+---
+2012/12/18 15:05:57 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "_slide2".' in X:\GIT\framework\yii-1.1.12\framework\web\CController.php:879
+Stack trace:
+#0 X:\GIT\billboard\protected\extensions\xflexslider\XFlexSlider.php(203): CController->renderPartial('_slide2', NULL)
+#1 X:\GIT\billboard\protected\extensions\xflexslider\XFlexSlider.php(100): XFlexSlider->renderSlides()
+#2 X:\GIT\framework\yii-1.1.12\framework\web\CBaseController.php(174): XFlexSlider->run()
+#3 X:\GIT\billboard\protected\views\site\pages\about.php(57): CBaseController->widget('ext.xflexslider...', Array)
+#4 X:\GIT\framework\yii-1.1.12\framework\web\CBaseController.php(127): require('X:\GIT\billboar...')
+#5 X:\GIT\framework\yii-1.1.12\framework\web\CBaseController.php(96): CBaseController->renderInternal('X:\GIT\billboar...', NULL, true)
+#6 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(870): CBaseController->renderFile('X:\GIT\billboar...', NULL, true)
+#7 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(783): CController->renderPartial('pages/about', NULL, true)
+#8 X:\GIT\framework\yii-1.1.12\framework\web\actions\CViewAction.php(141): CController->render('pages/about')
+#9 X:\GIT\framework\yii-1.1.12\framework\web\actions\CAction.php(75): CViewAction->run()
+#10 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(309): CAction->runWithParams(Array)
+#11 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(287): CController->runAction(Object(CViewAction))
+#12 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#13 X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php(283): CController->run('page')
+#14 X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php(142): CWebApplication->runController('site/page')
+#15 X:\GIT\framework\yii-1.1.12\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 X:\GIT\billboard\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/billboard/index.php?r=site/page&view=about
+---
+2012/12/25 09:15:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "notifyii".' in X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php:287
+Stack trace:
+#0 X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php(142): CWebApplication->runController('notifyii')
+#1 X:\GIT\framework\yii-1.1.12\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 X:\GIT\billboard\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/billboard/index.php?r=notifyii
+---
+2012/12/25 09:17:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "notifyii".' in X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php:287
+Stack trace:
+#0 X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php(142): CWebApplication->runController('notifyii')
+#1 X:\GIT\framework\yii-1.1.12\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 X:\GIT\billboard\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/billboard/index.php?r=notifyii
+---
+2012/12/25 09:18:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "notifyii".' in X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php:287
+Stack trace:
+#0 X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php(142): CWebApplication->runController('notifyii')
+#1 X:\GIT\framework\yii-1.1.12\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 X:\GIT\billboard\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/billboard/index.php?r=notifyii
+---
+2012/12/25 09:32:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "notifyii".' in X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php:287
+Stack trace:
+#0 X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php(142): CWebApplication->runController('notifyii')
+#1 X:\GIT\framework\yii-1.1.12\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 X:\GIT\billboard\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/billboard/index.php?r=notifyii
+---
+2012/12/25 09:34:25 [error] [exception.CDbException] exception 'CDbException' with message 'The table "notifyii" for active record class "ModelNotifyii" cannot be found in the database.' in X:\GIT\framework\yii-1.1.12\framework\db\ar\CActiveRecord.php:2312
+Stack trace:
+#0 X:\GIT\framework\yii-1.1.12\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(ModelNotifyii))
+#1 X:\GIT\billboard\protected\modules\notifyii\models\ModelNotifyii.php(26): CActiveRecord::model('ModelNotifyii')
+#2 X:\GIT\billboard\protected\modules\notifyii\models\ModelNotifyii.php(107): ModelNotifyii::model()
+#3 X:\GIT\billboard\protected\modules\notifyii\controllers\DefaultController.php(20): ModelNotifyii::getAllNotifications()
+#4 X:\GIT\framework\yii-1.1.12\framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#5 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php(283): CController->run('')
+#9 X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php(142): CWebApplication->runController('notifyii')
+#10 X:\GIT\framework\yii-1.1.12\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 X:\GIT\billboard\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/billboard/index.php?r=notifyii
+---
+2012/12/25 09:41:07 [error] [exception.CDbException] exception 'CDbException' with message 'The table "notifyii" for active record class "ModelNotifyii" cannot be found in the database.' in X:\GIT\framework\yii-1.1.12\framework\db\ar\CActiveRecord.php:2312
+Stack trace:
+#0 X:\GIT\framework\yii-1.1.12\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(ModelNotifyii))
+#1 X:\GIT\billboard\protected\modules\notifyii\models\ModelNotifyii.php(26): CActiveRecord::model('ModelNotifyii')
+#2 X:\GIT\billboard\protected\modules\notifyii\models\ModelNotifyii.php(107): ModelNotifyii::model()
+#3 X:\GIT\billboard\protected\modules\notifyii\controllers\DefaultController.php(20): ModelNotifyii::getAllNotifications()
+#4 X:\GIT\framework\yii-1.1.12\framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#5 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php(283): CController->run('')
+#9 X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php(142): CWebApplication->runController('notifyii')
+#10 X:\GIT\framework\yii-1.1.12\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 X:\GIT\billboard\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/billboard/index.php?r=notifyii
+---
+2012/12/25 10:06:19 [error] [exception.CDbException] exception 'CDbException' with message 'The table "notifyii" for active record class "ModelNotifyii" cannot be found in the database.' in X:\GIT\framework\yii-1.1.12\framework\db\ar\CActiveRecord.php:2312
+Stack trace:
+#0 X:\GIT\framework\yii-1.1.12\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(ModelNotifyii))
+#1 X:\GIT\billboard\protected\modules\notifyii\models\ModelNotifyii.php(26): CActiveRecord::model('ModelNotifyii')
+#2 X:\GIT\billboard\protected\modules\notifyii\models\ModelNotifyii.php(107): ModelNotifyii::model()
+#3 X:\GIT\billboard\protected\modules\notifyii\controllers\DefaultController.php(20): ModelNotifyii::getAllNotifications()
+#4 X:\GIT\framework\yii-1.1.12\framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#5 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php(283): CController->run('')
+#9 X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php(142): CWebApplication->runController('notifyii')
+#10 X:\GIT\framework\yii-1.1.12\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 X:\GIT\billboard\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/billboard/index.php?r=notifyii
+---
+2012/12/25 10:07:46 [error] [exception.CDbException] exception 'CDbException' with message 'The table "notifyii" for active record class "ModelNotifyii" cannot be found in the database.' in X:\GIT\framework\yii-1.1.12\framework\db\ar\CActiveRecord.php:2312
+Stack trace:
+#0 X:\GIT\framework\yii-1.1.12\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(ModelNotifyii))
+#1 X:\GIT\billboard\protected\modules\notifyii\models\ModelNotifyii.php(26): CActiveRecord::model('ModelNotifyii')
+#2 X:\GIT\billboard\protected\modules\notifyii\models\ModelNotifyii.php(107): ModelNotifyii::model()
+#3 X:\GIT\billboard\protected\modules\notifyii\controllers\DefaultController.php(20): ModelNotifyii::getAllNotifications()
+#4 X:\GIT\framework\yii-1.1.12\framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#5 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php(283): CController->run('')
+#9 X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php(142): CWebApplication->runController('notifyii')
+#10 X:\GIT\framework\yii-1.1.12\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 X:\GIT\billboard\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/billboard/index.php?r=notifyii
+---
+2012/12/25 10:59:18 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yii_billboard.notifyii' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `notifyii`.
+in X:\GIT\billboard\protected\modules\notifyii\models\ModelNotifyii.php (26)
+in X:\GIT\billboard\protected\modules\notifyii\models\ModelNotifyii.php (107)
+in X:\GIT\billboard\protected\modules\notifyii\controllers\DefaultController.php (20)
+2012/12/25 10:59:18 [error] [exception.CDbException] exception 'CDbException' with message 'The table "notifyii" for active record class "ModelNotifyii" cannot be found in the database.' in X:\GIT\framework\yii-1.1.12\framework\db\ar\CActiveRecord.php:2312
+Stack trace:
+#0 X:\GIT\framework\yii-1.1.12\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(ModelNotifyii))
+#1 X:\GIT\billboard\protected\modules\notifyii\models\ModelNotifyii.php(26): CActiveRecord::model('ModelNotifyii')
+#2 X:\GIT\billboard\protected\modules\notifyii\models\ModelNotifyii.php(107): ModelNotifyii::model()
+#3 X:\GIT\billboard\protected\modules\notifyii\controllers\DefaultController.php(20): ModelNotifyii::getAllNotifications()
+#4 X:\GIT\framework\yii-1.1.12\framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#5 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php(283): CController->run('')
+#9 X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php(142): CWebApplication->runController('notifyii')
+#10 X:\GIT\framework\yii-1.1.12\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 X:\GIT\billboard\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/billboard/index.php?r=notifyii
+---
+2012/12/25 11:01:23 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yii_billboard.notifyii' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `notifyii`.
+in X:\GIT\billboard\protected\modules\notifyii\controllers\ModelNotifyiiController.php (129)
+in X:\GIT\billboard\index.php (13)
+2012/12/25 11:01:23 [error] [exception.CDbException] exception 'CDbException' with message 'The table "notifyii" for active record class "ModelNotifyii" cannot be found in the database.' in X:\GIT\framework\yii-1.1.12\framework\db\ar\CActiveRecord.php:2312
+Stack trace:
+#0 X:\GIT\framework\yii-1.1.12\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(ModelNotifyii))
+#1 X:\GIT\framework\yii-1.1.12\framework\web\CActiveDataProvider.php(75): CActiveRecord::model('ModelNotifyii')
+#2 X:\GIT\billboard\protected\modules\notifyii\controllers\ModelNotifyiiController.php(129): CActiveDataProvider->__construct('ModelNotifyii')
+#3 X:\GIT\framework\yii-1.1.12\framework\web\actions\CInlineAction.php(50): ModelNotifyiiController->actionIndex()
+#4 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 X:\GIT\framework\yii-1.1.12\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 X:\GIT\framework\yii-1.1.12\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 X:\GIT\framework\yii-1.1.12\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 X:\GIT\framework\yii-1.1.12\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(292): CFilterChain->run()
+#11 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php(283): CController->run('')
+#13 X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php(142): CWebApplication->runController('notifyii/modelN...')
+#14 X:\GIT\framework\yii-1.1.12\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 X:\GIT\billboard\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/billboard/index.php?r=notifyii/modelNotifyii
+---
+2012/12/25 11:10:20 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yii_billboard.authitem' doesn't exist. The SQL statement executed was: select name from AuthItem where type = 2;.
+in X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\_form.php (11)
+in X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\create.php (22)
+in X:\GIT\billboard\protected\modules\notifyii\controllers\ModelNotifyiiController.php (79)
+2012/12/25 11:10:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yii_billboard.authitem' doesn't exist. The SQL statement executed was: select name from AuthItem where type = 2;' in X:\GIT\framework\yii-1.1.12\framework\db\CDbCommand.php:528
+Stack trace:
+#0 X:\GIT\framework\yii-1.1.12\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\_form.php(11): CDbCommand->queryAll()
+#2 X:\GIT\framework\yii-1.1.12\framework\web\CBaseController.php(127): require('X:\GIT\billboar...')
+#3 X:\GIT\framework\yii-1.1.12\framework\web\CBaseController.php(96): CBaseController->renderInternal('X:\GIT\billboar...', Array, true)
+#4 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(870): CBaseController->renderFile('X:\GIT\billboar...', Array, true)
+#5 X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\create.php(22): CController->renderPartial('_form', Array)
+#6 X:\GIT\framework\yii-1.1.12\framework\web\CBaseController.php(127): require('X:\GIT\billboar...')
+#7 X:\GIT\framework\yii-1.1.12\framework\web\CBaseController.php(96): CBaseController->renderInternal('X:\GIT\billboar...', Array, true)
+#8 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(870): CBaseController->renderFile('X:\GIT\billboar...', Array, true)
+#9 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#10 X:\GIT\billboard\protected\modules\notifyii\controllers\ModelNotifyiiController.php(79): CController->render('create', Array)
+#11 X:\GIT\framework\yii-1.1.12\framework\web\actions\CInlineAction.php(50): ModelNotifyiiController->actionCreate()
+#12 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 X:\GIT\framework\yii-1.1.12\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 X:\GIT\framework\yii-1.1.12\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#15 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#16 X:\GIT\framework\yii-1.1.12\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#17 X:\GIT\framework\yii-1.1.12\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(292): CFilterChain->run()
+#19 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php(283): CController->run('create')
+#21 X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php(142): CWebApplication->runController('notifyii/modelN...')
+#22 X:\GIT\framework\yii-1.1.12\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 X:\GIT\billboard\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/billboard/index.php?r=notifyii/modelNotifyii/create
+HTTP_REFERER=http://localhost/billboard/index.php?r=site/login
+---
+2012/12/25 11:17:42 [error] [system.db.CDbCommand] Error in preparing SQL: select name from AuthItem where type = 2;
+in X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\_form.php (11)
+in X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\create.php (22)
+in X:\GIT\billboard\protected\modules\notifyii\controllers\ModelNotifyiiController.php (79)
+2012/12/25 11:17:42 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 no such table: AuthItem. The SQL statement executed was: select name from AuthItem where type = 2;.
+in X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\_form.php (11)
+in X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\create.php (22)
+in X:\GIT\billboard\protected\modules\notifyii\controllers\ModelNotifyiiController.php (79)
+2012/12/25 11:17:42 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 no such table: AuthItem. The SQL statement executed was: select name from AuthItem where type = 2;' in X:\GIT\framework\yii-1.1.12\framework\db\CDbCommand.php:528
+Stack trace:
+#0 X:\GIT\framework\yii-1.1.12\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\_form.php(11): CDbCommand->queryAll()
+#2 X:\GIT\framework\yii-1.1.12\framework\web\CBaseController.php(127): require('X:\GIT\billboar...')
+#3 X:\GIT\framework\yii-1.1.12\framework\web\CBaseController.php(96): CBaseController->renderInternal('X:\GIT\billboar...', Array, true)
+#4 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(870): CBaseController->renderFile('X:\GIT\billboar...', Array, true)
+#5 X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\create.php(22): CController->renderPartial('_form', Array)
+#6 X:\GIT\framework\yii-1.1.12\framework\web\CBaseController.php(127): require('X:\GIT\billboar...')
+#7 X:\GIT\framework\yii-1.1.12\framework\web\CBaseController.php(96): CBaseController->renderInternal('X:\GIT\billboar...', Array, true)
+#8 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(870): CBaseController->renderFile('X:\GIT\billboar...', Array, true)
+#9 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#10 X:\GIT\billboard\protected\modules\notifyii\controllers\ModelNotifyiiController.php(79): CController->render('create', Array)
+#11 X:\GIT\framework\yii-1.1.12\framework\web\actions\CInlineAction.php(50): ModelNotifyiiController->actionCreate()
+#12 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 X:\GIT\framework\yii-1.1.12\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 X:\GIT\framework\yii-1.1.12\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#15 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#16 X:\GIT\framework\yii-1.1.12\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#17 X:\GIT\framework\yii-1.1.12\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(292): CFilterChain->run()
+#19 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php(283): CController->run('create')
+#21 X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php(142): CWebApplication->runController('notifyii/modelN...')
+#22 X:\GIT\framework\yii-1.1.12\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 X:\GIT\billboard\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/billboard/index.php?r=notifyii/modelNotifyii/create
+HTTP_REFERER=http://localhost/billboard/index.php?r=site/login
+---
+2012/12/25 11:20:12 [error] [system.db.CDbCommand] Error in preparing SQL: select name from AuthItem where type = 2;
+in X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\_form.php (11)
+in X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\create.php (22)
+in X:\GIT\billboard\protected\modules\notifyii\controllers\ModelNotifyiiController.php (79)
+2012/12/25 11:20:12 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 no such table: AuthItem. The SQL statement executed was: select name from AuthItem where type = 2;.
+in X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\_form.php (11)
+in X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\create.php (22)
+in X:\GIT\billboard\protected\modules\notifyii\controllers\ModelNotifyiiController.php (79)
+2012/12/25 11:20:12 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 no such table: AuthItem. The SQL statement executed was: select name from AuthItem where type = 2;' in X:\GIT\framework\yii-1.1.12\framework\db\CDbCommand.php:528
+Stack trace:
+#0 X:\GIT\framework\yii-1.1.12\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\_form.php(11): CDbCommand->queryAll()
+#2 X:\GIT\framework\yii-1.1.12\framework\web\CBaseController.php(127): require('X:\GIT\billboar...')
+#3 X:\GIT\framework\yii-1.1.12\framework\web\CBaseController.php(96): CBaseController->renderInternal('X:\GIT\billboar...', Array, true)
+#4 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(870): CBaseController->renderFile('X:\GIT\billboar...', Array, true)
+#5 X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\create.php(22): CController->renderPartial('_form', Array)
+#6 X:\GIT\framework\yii-1.1.12\framework\web\CBaseController.php(127): require('X:\GIT\billboar...')
+#7 X:\GIT\framework\yii-1.1.12\framework\web\CBaseController.php(96): CBaseController->renderInternal('X:\GIT\billboar...', Array, true)
+#8 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(870): CBaseController->renderFile('X:\GIT\billboar...', Array, true)
+#9 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#10 X:\GIT\billboard\protected\modules\notifyii\controllers\ModelNotifyiiController.php(79): CController->render('create', Array)
+#11 X:\GIT\framework\yii-1.1.12\framework\web\actions\CInlineAction.php(50): ModelNotifyiiController->actionCreate()
+#12 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 X:\GIT\framework\yii-1.1.12\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 X:\GIT\framework\yii-1.1.12\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#15 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#16 X:\GIT\framework\yii-1.1.12\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#17 X:\GIT\framework\yii-1.1.12\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(292): CFilterChain->run()
+#19 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php(283): CController->run('create')
+#21 X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php(142): CWebApplication->runController('notifyii/modelN...')
+#22 X:\GIT\framework\yii-1.1.12\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 X:\GIT\billboard\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/billboard/index.php?r=notifyii/modelNotifyii/create
+HTTP_REFERER=http://localhost/billboard/index.php?r=notifyii/modelNotifyii
+---
+2012/12/25 11:21:15 [error] [system.db.CDbCommand] Error in preparing SQL: select name from AuthItem where type = 2;
+in X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\_form.php (11)
+in X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\create.php (22)
+in X:\GIT\billboard\protected\modules\notifyii\controllers\ModelNotifyiiController.php (79)
+2012/12/25 11:21:15 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 no such table: AuthItem. The SQL statement executed was: select name from AuthItem where type = 2;.
+in X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\_form.php (11)
+in X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\create.php (22)
+in X:\GIT\billboard\protected\modules\notifyii\controllers\ModelNotifyiiController.php (79)
+2012/12/25 11:21:15 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 no such table: AuthItem. The SQL statement executed was: select name from AuthItem where type = 2;' in X:\GIT\framework\yii-1.1.12\framework\db\CDbCommand.php:528
+Stack trace:
+#0 X:\GIT\framework\yii-1.1.12\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\_form.php(11): CDbCommand->queryAll()
+#2 X:\GIT\framework\yii-1.1.12\framework\web\CBaseController.php(127): require('X:\GIT\billboar...')
+#3 X:\GIT\framework\yii-1.1.12\framework\web\CBaseController.php(96): CBaseController->renderInternal('X:\GIT\billboar...', Array, true)
+#4 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(870): CBaseController->renderFile('X:\GIT\billboar...', Array, true)
+#5 X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\create.php(22): CController->renderPartial('_form', Array)
+#6 X:\GIT\framework\yii-1.1.12\framework\web\CBaseController.php(127): require('X:\GIT\billboar...')
+#7 X:\GIT\framework\yii-1.1.12\framework\web\CBaseController.php(96): CBaseController->renderInternal('X:\GIT\billboar...', Array, true)
+#8 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(870): CBaseController->renderFile('X:\GIT\billboar...', Array, true)
+#9 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#10 X:\GIT\billboard\protected\modules\notifyii\controllers\ModelNotifyiiController.php(79): CController->render('create', Array)
+#11 X:\GIT\framework\yii-1.1.12\framework\web\actions\CInlineAction.php(50): ModelNotifyiiController->actionCreate()
+#12 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 X:\GIT\framework\yii-1.1.12\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 X:\GIT\framework\yii-1.1.12\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#15 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#16 X:\GIT\framework\yii-1.1.12\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#17 X:\GIT\framework\yii-1.1.12\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(292): CFilterChain->run()
+#19 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php(283): CController->run('create')
+#21 X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php(142): CWebApplication->runController('notifyii/modelN...')
+#22 X:\GIT\framework\yii-1.1.12\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 X:\GIT\billboard\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/billboard/index.php?r=notifyii/modelNotifyii/create
+HTTP_REFERER=http://localhost/billboard/index.php?r=site/login
+---
+2012/12/25 11:32:09 [error] [system.db.CDbCommand] Error in preparing SQL: select name from AuthItem where type = 2;
+in X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\_form.php (11)
+in X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\create.php (22)
+in X:\GIT\billboard\protected\modules\notifyii\controllers\ModelNotifyiiController.php (79)
+2012/12/25 11:32:09 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 no such table: AuthItem. The SQL statement executed was: select name from AuthItem where type = 2;.
+in X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\_form.php (11)
+in X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\create.php (22)
+in X:\GIT\billboard\protected\modules\notifyii\controllers\ModelNotifyiiController.php (79)
+2012/12/25 11:32:09 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 no such table: AuthItem. The SQL statement executed was: select name from AuthItem where type = 2;' in X:\GIT\framework\yii-1.1.12\framework\db\CDbCommand.php:528
+Stack trace:
+#0 X:\GIT\framework\yii-1.1.12\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\_form.php(11): CDbCommand->queryAll()
+#2 X:\GIT\framework\yii-1.1.12\framework\web\CBaseController.php(127): require('X:\GIT\billboar...')
+#3 X:\GIT\framework\yii-1.1.12\framework\web\CBaseController.php(96): CBaseController->renderInternal('X:\GIT\billboar...', Array, true)
+#4 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(870): CBaseController->renderFile('X:\GIT\billboar...', Array, true)
+#5 X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\create.php(22): CController->renderPartial('_form', Array)
+#6 X:\GIT\framework\yii-1.1.12\framework\web\CBaseController.php(127): require('X:\GIT\billboar...')
+#7 X:\GIT\framework\yii-1.1.12\framework\web\CBaseController.php(96): CBaseController->renderInternal('X:\GIT\billboar...', Array, true)
+#8 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(870): CBaseController->renderFile('X:\GIT\billboar...', Array, true)
+#9 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#10 X:\GIT\billboard\protected\modules\notifyii\controllers\ModelNotifyiiController.php(79): CController->render('create', Array)
+#11 X:\GIT\framework\yii-1.1.12\framework\web\actions\CInlineAction.php(50): ModelNotifyiiController->actionCreate()
+#12 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 X:\GIT\framework\yii-1.1.12\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 X:\GIT\framework\yii-1.1.12\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#15 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#16 X:\GIT\framework\yii-1.1.12\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#17 X:\GIT\framework\yii-1.1.12\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(292): CFilterChain->run()
+#19 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php(283): CController->run('create')
+#21 X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php(142): CWebApplication->runController('notifyii/modelN...')
+#22 X:\GIT\framework\yii-1.1.12\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 X:\GIT\billboard\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/billboard/index.php?r=notifyii/modelNotifyii/create
+HTTP_REFERER=http://localhost/billboard/index.php?r=site/login
+---
+2012/12/25 11:33:11 [error] [system.db.CDbCommand] Error in preparing SQL: select name from AuthItem where type = 2;
+in X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\_form.php (11)
+in X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\create.php (22)
+in X:\GIT\billboard\protected\modules\notifyii\controllers\ModelNotifyiiController.php (79)
+2012/12/25 11:33:11 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 no such table: AuthItem. The SQL statement executed was: select name from AuthItem where type = 2;.
+in X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\_form.php (11)
+in X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\create.php (22)
+in X:\GIT\billboard\protected\modules\notifyii\controllers\ModelNotifyiiController.php (79)
+2012/12/25 11:33:11 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 no such table: AuthItem. The SQL statement executed was: select name from AuthItem where type = 2;' in X:\GIT\framework\yii-1.1.12\framework\db\CDbCommand.php:528
+Stack trace:
+#0 X:\GIT\framework\yii-1.1.12\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\_form.php(11): CDbCommand->queryAll()
+#2 X:\GIT\framework\yii-1.1.12\framework\web\CBaseController.php(127): require('X:\GIT\billboar...')
+#3 X:\GIT\framework\yii-1.1.12\framework\web\CBaseController.php(96): CBaseController->renderInternal('X:\GIT\billboar...', Array, true)
+#4 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(870): CBaseController->renderFile('X:\GIT\billboar...', Array, true)
+#5 X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\create.php(22): CController->renderPartial('_form', Array)
+#6 X:\GIT\framework\yii-1.1.12\framework\web\CBaseController.php(127): require('X:\GIT\billboar...')
+#7 X:\GIT\framework\yii-1.1.12\framework\web\CBaseController.php(96): CBaseController->renderInternal('X:\GIT\billboar...', Array, true)
+#8 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(870): CBaseController->renderFile('X:\GIT\billboar...', Array, true)
+#9 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#10 X:\GIT\billboard\protected\modules\notifyii\controllers\ModelNotifyiiController.php(79): CController->render('create', Array)
+#11 X:\GIT\framework\yii-1.1.12\framework\web\actions\CInlineAction.php(50): ModelNotifyiiController->actionCreate()
+#12 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 X:\GIT\framework\yii-1.1.12\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 X:\GIT\framework\yii-1.1.12\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#15 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#16 X:\GIT\framework\yii-1.1.12\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#17 X:\GIT\framework\yii-1.1.12\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(292): CFilterChain->run()
+#19 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php(283): CController->run('create')
+#21 X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php(142): CWebApplication->runController('notifyii/modelN...')
+#22 X:\GIT\framework\yii-1.1.12\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 X:\GIT\billboard\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/billboard/index.php?r=notifyii/modelNotifyii/create
+HTTP_REFERER=http://localhost/billboard/index.php?r=site/login
+---
+2012/12/25 11:43:00 [error] [system.db.CDbCommand] Error in preparing SQL: select name from AuthItem where type = 2;
+in X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\_form.php (11)
+in X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\create.php (22)
+in X:\GIT\billboard\protected\modules\notifyii\controllers\ModelNotifyiiController.php (79)
+2012/12/25 11:43:00 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 no such table: AuthItem. The SQL statement executed was: select name from AuthItem where type = 2;.
+in X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\_form.php (11)
+in X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\create.php (22)
+in X:\GIT\billboard\protected\modules\notifyii\controllers\ModelNotifyiiController.php (79)
+2012/12/25 11:43:00 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 no such table: AuthItem. The SQL statement executed was: select name from AuthItem where type = 2;' in X:\GIT\framework\yii-1.1.12\framework\db\CDbCommand.php:528
+Stack trace:
+#0 X:\GIT\framework\yii-1.1.12\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\_form.php(11): CDbCommand->queryAll()
+#2 X:\GIT\framework\yii-1.1.12\framework\web\CBaseController.php(127): require('X:\GIT\billboar...')
+#3 X:\GIT\framework\yii-1.1.12\framework\web\CBaseController.php(96): CBaseController->renderInternal('X:\GIT\billboar...', Array, true)
+#4 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(870): CBaseController->renderFile('X:\GIT\billboar...', Array, true)
+#5 X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\create.php(22): CController->renderPartial('_form', Array)
+#6 X:\GIT\framework\yii-1.1.12\framework\web\CBaseController.php(127): require('X:\GIT\billboar...')
+#7 X:\GIT\framework\yii-1.1.12\framework\web\CBaseController.php(96): CBaseController->renderInternal('X:\GIT\billboar...', Array, true)
+#8 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(870): CBaseController->renderFile('X:\GIT\billboar...', Array, true)
+#9 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#10 X:\GIT\billboard\protected\modules\notifyii\controllers\ModelNotifyiiController.php(79): CController->render('create', Array)
+#11 X:\GIT\framework\yii-1.1.12\framework\web\actions\CInlineAction.php(50): ModelNotifyiiController->actionCreate()
+#12 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 X:\GIT\framework\yii-1.1.12\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 X:\GIT\framework\yii-1.1.12\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#15 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#16 X:\GIT\framework\yii-1.1.12\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#17 X:\GIT\framework\yii-1.1.12\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(292): CFilterChain->run()
+#19 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php(283): CController->run('create')
+#21 X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php(142): CWebApplication->runController('notifyii/modelN...')
+#22 X:\GIT\framework\yii-1.1.12\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 X:\GIT\billboard\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/billboard/index.php?r=notifyii/modelNotifyii/create
+HTTP_REFERER=http://localhost/billboard/index.php?r=site/login
+---
+2012/12/25 11:43:37 [error] [system.db.CDbCommand] Error in preparing SQL: select name from AuthItem where type = 2;
+in X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\_form.php (11)
+in X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\create.php (22)
+in X:\GIT\billboard\protected\modules\notifyii\controllers\ModelNotifyiiController.php (79)
+2012/12/25 11:43:37 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 no such table: AuthItem. The SQL statement executed was: select name from AuthItem where type = 2;.
+in X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\_form.php (11)
+in X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\create.php (22)
+in X:\GIT\billboard\protected\modules\notifyii\controllers\ModelNotifyiiController.php (79)
+2012/12/25 11:43:37 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 no such table: AuthItem. The SQL statement executed was: select name from AuthItem where type = 2;' in X:\GIT\framework\yii-1.1.12\framework\db\CDbCommand.php:528
+Stack trace:
+#0 X:\GIT\framework\yii-1.1.12\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\_form.php(11): CDbCommand->queryAll()
+#2 X:\GIT\framework\yii-1.1.12\framework\web\CBaseController.php(127): require('X:\GIT\billboar...')
+#3 X:\GIT\framework\yii-1.1.12\framework\web\CBaseController.php(96): CBaseController->renderInternal('X:\GIT\billboar...', Array, true)
+#4 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(870): CBaseController->renderFile('X:\GIT\billboar...', Array, true)
+#5 X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\create.php(22): CController->renderPartial('_form', Array)
+#6 X:\GIT\framework\yii-1.1.12\framework\web\CBaseController.php(127): require('X:\GIT\billboar...')
+#7 X:\GIT\framework\yii-1.1.12\framework\web\CBaseController.php(96): CBaseController->renderInternal('X:\GIT\billboar...', Array, true)
+#8 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(870): CBaseController->renderFile('X:\GIT\billboar...', Array, true)
+#9 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#10 X:\GIT\billboard\protected\modules\notifyii\controllers\ModelNotifyiiController.php(79): CController->render('create', Array)
+#11 X:\GIT\framework\yii-1.1.12\framework\web\actions\CInlineAction.php(50): ModelNotifyiiController->actionCreate()
+#12 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 X:\GIT\framework\yii-1.1.12\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 X:\GIT\framework\yii-1.1.12\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#15 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#16 X:\GIT\framework\yii-1.1.12\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#17 X:\GIT\framework\yii-1.1.12\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(292): CFilterChain->run()
+#19 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php(283): CController->run('create')
+#21 X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php(142): CWebApplication->runController('notifyii/modelN...')
+#22 X:\GIT\framework\yii-1.1.12\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 X:\GIT\billboard\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/billboard/index.php?r=notifyii/modelNotifyii/create
+HTTP_REFERER=http://localhost/billboard/index.php?r=site/login
+---
+2012/12/25 11:44:22 [error] [system.db.CDbCommand] Error in preparing SQL: select name from AuthItem where type = 2;
+in X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\_form.php (11)
+in X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\create.php (22)
+in X:\GIT\billboard\protected\modules\notifyii\controllers\ModelNotifyiiController.php (79)
+2012/12/25 11:44:22 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 no such table: AuthItem. The SQL statement executed was: select name from AuthItem where type = 2;.
+in X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\_form.php (11)
+in X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\create.php (22)
+in X:\GIT\billboard\protected\modules\notifyii\controllers\ModelNotifyiiController.php (79)
+2012/12/25 11:44:22 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 no such table: AuthItem. The SQL statement executed was: select name from AuthItem where type = 2;' in X:\GIT\framework\yii-1.1.12\framework\db\CDbCommand.php:528
+Stack trace:
+#0 X:\GIT\framework\yii-1.1.12\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\_form.php(11): CDbCommand->queryAll()
+#2 X:\GIT\framework\yii-1.1.12\framework\web\CBaseController.php(127): require('X:\GIT\billboar...')
+#3 X:\GIT\framework\yii-1.1.12\framework\web\CBaseController.php(96): CBaseController->renderInternal('X:\GIT\billboar...', Array, true)
+#4 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(870): CBaseController->renderFile('X:\GIT\billboar...', Array, true)
+#5 X:\GIT\billboard\protected\modules\notifyii\views\modelNotifyii\create.php(22): CController->renderPartial('_form', Array)
+#6 X:\GIT\framework\yii-1.1.12\framework\web\CBaseController.php(127): require('X:\GIT\billboar...')
+#7 X:\GIT\framework\yii-1.1.12\framework\web\CBaseController.php(96): CBaseController->renderInternal('X:\GIT\billboar...', Array, true)
+#8 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(870): CBaseController->renderFile('X:\GIT\billboar...', Array, true)
+#9 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#10 X:\GIT\billboard\protected\modules\notifyii\controllers\ModelNotifyiiController.php(79): CController->render('create', Array)
+#11 X:\GIT\framework\yii-1.1.12\framework\web\actions\CInlineAction.php(50): ModelNotifyiiController->actionCreate()
+#12 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 X:\GIT\framework\yii-1.1.12\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 X:\GIT\framework\yii-1.1.12\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#15 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#16 X:\GIT\framework\yii-1.1.12\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#17 X:\GIT\framework\yii-1.1.12\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(292): CFilterChain->run()
+#19 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php(283): CController->run('create')
+#21 X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php(142): CWebApplication->runController('notifyii/modelN...')
+#22 X:\GIT\framework\yii-1.1.12\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 X:\GIT\billboard\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/billboard/index.php?r=notifyii/modelNotifyii/create
+HTTP_REFERER=http://localhost/billboard/index.php?r=site/login
+---
+2012/12/25 11:45:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "notifyii/modelNotifyii/create".' in X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php:287
+Stack trace:
+#0 X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php(142): CWebApplication->runController('notifyii/modelN...')
+#1 X:\GIT\framework\yii-1.1.12\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 X:\GIT\billboard\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/billboard/index.php?r=notifyii/modelNotifyii/create
+HTTP_REFERER=http://localhost/billboard/index.php?r=site/login
+---
+2012/12/25 11:47:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "notifyii/modelNotifyii/create".' in X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php:287
+Stack trace:
+#0 X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php(142): CWebApplication->runController('notifyii/modelN...')
+#1 X:\GIT\framework\yii-1.1.12\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 X:\GIT\billboard\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/billboard/index.php?r=notifyii/modelNotifyii/create
+HTTP_REFERER=http://localhost/billboard/index.php?r=site/login
+---
+2012/12/25 11:47:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in X:\GIT\framework\yii-1.1.12\framework\web\actions\CViewAction.php:113
+Stack trace:
+#0 X:\GIT\framework\yii-1.1.12\framework\web\actions\CViewAction.php(124): CViewAction->resolveView('index')
+#1 X:\GIT\framework\yii-1.1.12\framework\web\actions\CAction.php(75): CViewAction->run()
+#2 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(309): CAction->runWithParams(Array)
+#3 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(287): CController->runAction(Object(CViewAction))
+#4 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php(283): CController->run('page')
+#6 X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php(142): CWebApplication->runController('site/page')
+#7 X:\GIT\framework\yii-1.1.12\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 X:\GIT\billboard\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/billboard/index.php?r=site/page
+---
+2012/12/25 11:53:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pages".' in X:\GIT\framework\yii-1.1.12\framework\web\CController.php:484
+Stack trace:
+#0 X:\GIT\framework\yii-1.1.12\framework\web\CController.php(271): CController->missingAction('pages')
+#1 X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php(283): CController->run('pages')
+#2 X:\GIT\framework\yii-1.1.12\framework\web\CWebApplication.php(142): CWebApplication->runController('site/pages')
+#3 X:\GIT\framework\yii-1.1.12\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 X:\GIT\billboard\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/billboard/index.php?r=site/pages&view=about
+---
